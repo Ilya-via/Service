@@ -1,0 +1,409 @@
+$f-color-light: #ffffff;
+$f-color-dark: #404040;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/background-page.jpg')  rgb(240, 240, 240) repeat;
+    background-position: left bottom; 
+    font-family: Economica, Arial, sans-serif;
+    color: #525252;
+    font-size: 18px;
+}
+
+.body {
+    transition: transform 500ms ease-in-out;
+}
+
+.bodySlide {
+    transform: translateX(70%);
+}
+
+.overflow {
+    position: fixed;
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+.f-left {
+    float: left;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#wrapper .row {
+    margin: 0 1em;
+}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.col100 {
+    width: 100%;
+    padding: 0 2em;
+    margin: 1em 0;
+}
+
+.col33 {
+    overflow: hidden;
+    float: left;
+    width: 33.333%;
+    padding: 0 1em;
+    margin: 1em 0;
+}
+
+.col50 {
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    padding: 0 1em;
+    margin: 1em 0;
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+@media (min-width: 768px) and (max-width: 981px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .logoImg {
+        position: absolute;
+        margin: .5em 0;
+        right: -0;
+        top: 0;
+    }
+
+    .da-slider {
+        margin: 1em auto;
+    }
+
+    #wrapper .col33 {
+        overflow: hidden;
+        float: left;
+        width: 50%;
+        padding: 0 1em;
+        margin: 1em 0;
+
+        &:nth-of-type(odd) {
+            width: 49%;
+        }
+
+        &:nth-of-type(even) {
+            width: 51%;
+        }
+    }
+
+    footer .col33 {
+        overflow: hidden;
+        float: left;
+        width: 33.33%;
+        padding: 0 1em 0 0;
+        margin: 1em 0 0 0;
+
+
+        &:nth-of-type(1) {
+            width: 50%;
+        }
+
+        &:nth-of-type(2) {
+            width: 30%;
+        }
+
+        &:nth-of-type(3) {
+            width: 20%;
+            padding: 0;
+            margin: .5em 0;
+        }
+    }
+
+    .da-slide h2 {
+        font-size: 29px;
+    }
+
+    .da-slide p {
+        height: 155px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 22px;
+    }
+
+    #header .container,
+    .header-min .container {
+        display: none;
+    }
+
+    #hamburger-11 {
+        position: fixed;
+        display: block;
+        padding: 8px;
+        border-radius: 10px;
+        background: #6b6b6c;
+        top: 9px;
+        left: 9px;
+        z-index: 20;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .contacts {
+        padding: 1em 0;
+    }
+
+    .logoImg {
+        height: 145px;
+        width: 145px;
+    }
+
+    .da-slider {
+        margin: 1em auto;
+    }
+
+    .header-min nav a {
+        padding: .5em;
+    }
+
+    .col100 {
+        padding: 0;
+    }
+
+    #wrapper .col33 {
+        overflow: hidden;
+        float: none;
+        width: 395px;
+        padding: 0;
+        margin: 1em auto;
+    }
+
+    #wrapper .col50 {
+        overflow: hidden;
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 1em 0;
+    }
+
+    .img-main {
+        margin-top: 0;
+    }
+
+    footer .col33 {
+        overflow: hidden;
+        float: left;
+        padding: 0 1em 0 0;
+        margin: 1em 0 0 0;
+
+
+        &:nth-of-type(1) {
+            width: 100%;
+        }
+
+        &:nth-of-type(2) {
+            width: 70%;
+        }
+
+        &:nth-of-type(3) {
+            width: 30%;
+        }
+    }
+
+    .da-slide h2 {
+        font-size: 29px;
+        width: 90%;
+    }
+
+    .da-slide p {
+        height: 155px;
+    }
+
+    .location-ico {
+        background: left / 25px no-repeat url(../img/location-ic1.png);
+    }
+
+    .calendar-ico {
+        background: left / 25px no-repeat url(../img/calendar.png);
+    }
+
+    h2.line:before,
+    h3.line:before {
+        left: 0;
+        margin: 0;
+    }
+
+    h2.line:after,
+    h3.line:after {
+        left: 0;
+        margin: 0;
+    }
+
+    h2.line:after,
+    h2.line:before,
+    h3.line:after,
+    h3.line:before {
+        width: 90%;
+    }
+
+    .text-wth {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 22px;
+    }
+
+    #header {
+        padding: 0 0 1em 0;
+        height: 70px;
+    }
+
+    #header .container,
+    .header-min .container {
+        display: none;
+    }
+
+    #hamburger-11 {
+        position: fixed;
+        display: block;
+        padding: 8px;
+        border-radius: 10px;
+        background: #6b6b6c;
+        top: 9px;
+        left: 9px;
+        z-index: 20;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .contacts {
+        padding: 1em 0;
+    }
+
+    .logoImg {
+        height: 145px;
+        width: 145px;
+    }
+
+    .da-slider {
+        margin: 1em auto;
+    }
+
+    .header-min nav a {
+        padding: .5em;
+    }
+
+    .col100 {
+        padding: 0;
+    }
+
+    #wrapper .col33,
+    #wrapper .col50 {
+        overflow: hidden;
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 1em 0;
+    }
+
+    .img-main {
+        margin-top: 0;
+    }
+
+    footer .col33 {
+        overflow: hidden;
+        float: left;
+        padding: 0 1em 0 0;
+        margin: 1em 0 0 0;
+
+
+        &:nth-of-type(1) {
+            width: 85%;
+            text-align: center;
+        }
+
+        &:nth-of-type(2) {
+            width: 85%;
+        }
+
+        &:nth-of-type(3) {
+            width: 20%;
+            padding: 0;
+            position: absolute;
+            right: 10px;
+        }
+    }
+
+    .da-slider {
+        min-width: 375px;
+    }
+
+    .da-slide h2 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .da-slide p {
+        height: 253px;
+        font-size: 15px;
+    }
+}
+
+.contact ul li {
+    list-style: none;
+    padding-left: 2em;
+    margin: .5em 1.5em;
+    font-size: 1em;
+    color: rgb(99, 98, 98);
+}

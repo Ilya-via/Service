@@ -1,0 +1,90 @@
+footer {
+    background: #2a303c;
+    color: #6b6b6c;
+}
+
+footer a {
+    color: #6b6b6c;
+
+    &:hover {
+        color: #6b6b6c;
+    }
+}
+
+.foo-content {
+    font-size: .8em;
+}
+
+.foo-list li {
+    list-style: none;
+    margin-bottom: .8em;
+}
+
+.phone-icon {
+    background: left / contain no-repeat url(../img/phone-ic.png);
+}
+
+.location-icon {
+    background: left / contain no-repeat url(../img/location-ic.png);
+}
+
+.location-icon p,
+.phone-icon p {
+    margin-left: 3.3em;
+}
+
+.sprites {
+    text-align: center;
+}
+
+.sprites div {
+    display: inline-block;
+}
+
+.sprites a {
+    display: inline-block;
+    padding-left: 30px;
+    margin-top: 6px;
+}
+
+.youtube,
+.vk,
+.twitter,
+.instagram {
+    width: 50px;
+    height: 50px;
+    background: 0 0 / 304% no-repeat url(../img/social-sprites.png);
+    transition: all 400ms ease-in-out;
+}
+
+.youtube {
+    background-position: -102px -102px;
+
+    &:hover {
+        background-position: -102px -153px;
+    }
+}
+
+.vk {
+    background-position: 0px -102px;
+
+    &:hover {
+        background-position: -0px -153px;
+    }
+}
+
+.twitter {
+    background-position: -51px 0px;
+
+    &:hover {
+        background-position: -51px -51px;
+    }
+}
+
+.instagram {
+    background-position: 0px 0px;
+
+    &:hover {
+        background-position: 0px -51px;
+    }
+}
