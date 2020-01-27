@@ -57,6 +57,12 @@ h2.line {
     }
 }
 
+@media (max-width: 840px) {
+    #logoImg {
+        display: none;
+    }
+}
+
 @media (max-width: 400px) {
     .wrapper-icon .tw-icon {
         display: none;
