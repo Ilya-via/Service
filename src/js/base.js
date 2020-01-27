@@ -3,20 +3,19 @@ headerChilds.style.visibility = 'hidden';
 
 window.onload = function () {
 
-    var nav = document.querySelectorAll('#header .page');
-    var contacts = document.querySelectorAll('#header .contacts li');
-    var logo = document.querySelector('#logo');
-    var logoImg = document.querySelector('#logoImg');
-    var daSlider = document.querySelector('.da-slider');
-    var wrapper = document.querySelector('#wrapper');
-    var headerHeight = document.querySelector('#header').offsetHeight;
-    var headerMin = document.querySelector('.header-min');
-    var hamburger = document.querySelector('#hamburger-11');
-    var headerMobile = document.querySelector('.header-mobile');
+    var nav = document.querySelectorAll('#header .page'),
+        contacts = document.querySelectorAll('#header .contacts li'),
+        logo = document.querySelector('#logo'),
+        logoImg = document.querySelector('#logoImg'),
+        daSlider = document.querySelector('.da-slider'),
+        wrapper = document.querySelector('#wrapper'),
+        headerHeight = document.querySelector('#header').offsetHeight,
+        headerMin = document.querySelector('.header-min'),
+        hamburger = document.querySelector('#hamburger-11'),
+        headerMobile = document.querySelector('.header-mobile');
 
 
     function show(elem, animate) {
-        // elem.classList.add('tinRightIn', 'magictime');
         elem.classList.add('visible', animate, 'animated');
     }
 
@@ -69,7 +68,4 @@ window.onload = function () {
         document.body.classList.toggle('overflow');
         document.querySelector('.cover').classList.toggle('none');
     })
-
-
-
 }

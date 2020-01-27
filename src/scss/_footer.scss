@@ -28,6 +28,18 @@ footer a {
     background: left / contain no-repeat url(../img/location-ic.png);
 }
 
+@media (max-width: 400px) {
+
+    footer .location-icon,
+    footer .phone-icon {
+        background: none;
+
+        p {
+            margin-left: 20px;
+        }
+    }
+}
+
 .location-icon p,
 .phone-icon p {
     margin-left: 3.3em;

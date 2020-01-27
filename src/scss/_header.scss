@@ -145,7 +145,7 @@ nav ul {
 
 .header-min {
 	display: none;
-	background: rgba(42, 48, 60, .8);
+	background: #2a303c;
 	z-index: 10;
 	position: fixed;
 	right: 0;
@@ -193,11 +193,10 @@ nav ul {
 }
 
 .header-mobile {
-	background: #2a303c;
 	transform: translateX(-100%);
 	transition: transform 500ms ease-in-out;
 	position: fixed;
-	width: 70vw;
+	width: 100%;
 	height: 100%;
 	top: 0;
 	z-index: 15;
@@ -222,7 +221,7 @@ nav ul {
 	display: none;
 	padding: 8px;
 	border-radius: 10px;
-	background: #6b6b6c;
+	background-color: rgba(7, 167, 164, 0.5);
 	top: 9px;
 	left: 9px;
 }
@@ -238,7 +237,8 @@ nav ul {
 }
 
 #nav-mobile {
-	margin-top: 5em;
+	margin: 4em 0;
+	padding: 10px 0;
 
 	.button {
 		display: block;
@@ -267,16 +267,4 @@ nav ul {
 	top: 53px;
 	right: 0px;
 	z-index: 100;
-
-	// li {
-	// 	list-style: none;
-	// 	padding: .2em;
-
-	// 	a {
-	// 		color: #fdfefe;
-	// 		font-size: .8em;
-
-	// 		&:hover {}
-	// 	}
-	// }
 }

@@ -9,8 +9,8 @@ $f-color-dark: #404040;
 }
 
 body {
-    background: url('../img/background-page.png')  rgb(240, 240, 240) repeat;
-    background-position: left bottom; 
+    background: url('../img/background-page.png') rgb(240, 240, 240) repeat;
+    background-position: left bottom;
     font-family: Economica, Arial, sans-serif;
     color: #525252;
     font-size: 18px;
@@ -183,7 +183,6 @@ a:hover {
         display: block;
         padding: 8px;
         border-radius: 10px;
-        background: #6b6b6c;
         top: 9px;
         left: 9px;
         z-index: 20;
@@ -208,6 +207,15 @@ a:hover {
 
     .header-min nav a {
         padding: .5em;
+    }
+
+    #nav-mobile ul .button {
+        background-color: rgba(7, 167, 164, 0.5);
+        width: 265px;
+        border-radius: 5px;
+        padding: 4px 6px;
+        box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.7);
+        font-size: 40px;
     }
 
     .col100 {
@@ -297,14 +305,14 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    @media (max-width: 350px) {
+        h2 {
+            font-size: 30px;
+        }
+    }
 
     body {
         font-size: 22px;
-    }
-
-    #header {
-        padding: 0 0 1em 0;
-        height: 70px;
     }
 
     #header .container,
@@ -317,7 +325,6 @@ a:hover {
         display: block;
         padding: 8px;
         border-radius: 10px;
-        background: #6b6b6c;
         top: 9px;
         left: 9px;
         z-index: 20;
@@ -406,12 +413,18 @@ a:hover {
     margin: .5em 1.5em;
     font-size: 1em;
     color: rgb(99, 98, 98);
-}
 
+    @media (max-width: 370px) {
+        margin: .5em 0;
+        font-size: 0.8em;
+        padding: 4px 0 0 2em;
+    }
+}
 
 //PRELOADER
 .loaderArea {
-    background: linear-gradient(90deg,#830078 , #83001c);
+    // background: linear-gradient(90deg, #830078, #83001c);
+    background: linear-gradient(225deg, rgb(7, 167, 164), #83001c);
     overflow: hidden;
     position: fixed;
     left: 0;
