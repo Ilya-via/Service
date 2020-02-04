@@ -1,2 +1,1 @@
-Сайт для автосервиса.
-https://service-leon.netlify.com/
+Сайт для автосервиса (использовано: SCSS, JS, Owl Carousel. Развёрнут на gulp + адаптивная вёрстка).
